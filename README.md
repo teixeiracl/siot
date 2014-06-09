@@ -13,6 +13,7 @@ See more details in our SBRC Paper (Portuguese): http://sbrc2014.ufsc.br/anais/f
 Directory Organization: 
 -----------------------
 examples: there are basic, client/server and contiki examples.
+
 src: there are two auxiliar Pass(PADriver and AliasSets),  a Merge Pass used by Run to merge .bc files 
 	     and NetDepGraph directory. In NetDepGraph there are 3 Pass: InputDep, NetDepGraph and NetVulArrays. 
 	     InputDep find the user inputs including files and network. NetDepGraph creates the DepGraph of 
