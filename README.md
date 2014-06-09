@@ -1,7 +1,8 @@
 SIoT
 ====
 
-Securing Internet of Things
+Securing Internet of Things.
+
 This projects aims to protect code of Internet of Things (IoT) aggainst attacks 
 like Buffer Overflow, Integer Overflow, SQL Injection, etc. 
 The atual version focus on Buffer Overflow. 
@@ -21,7 +22,7 @@ Prerequisites:
 --------------
 LLVM 3.3 - (See http://llvm.org/docs/GettingStarted.html or use the script in the final of this README).
 
-Boost (http://www.boost.org/).
+Boost (http://www.boost.org/ or in Ubuntu: sudo apt-get install boost-dev libboost-program-options-dev).
 
 SIoT build:
 -----------
@@ -41,7 +42,6 @@ Run SIoT:
 -The user needs to make a text file containing, in each line and separeted by comma, the client, daemon, send function and receive function names.
 
 -> See an example in examples/basic/teste.txt.
-
 
 
 Extras
