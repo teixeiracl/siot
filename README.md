@@ -11,16 +11,17 @@ See more details in our SBRC Paper (Portuguese): http://sbrc2014.ufsc.br/anais/f
 
 Directory Organization: 
 -----------------------
-	examples: there are basic, client/server and contiki examples
-	src: there are two auxiliar Pass(PADriver and AliasSets),  a Merge Pass used by Run to merge .bc files 
+examples: there are basic, client/server and contiki examples.
+src: there are two auxiliar Pass(PADriver and AliasSets),  a Merge Pass used by Run to merge .bc files 
 	     and NetDepGraph directory. In NetDepGraph there are 3 Pass: InputDep, NetDepGraph and NetVulArrays. 
 	     InputDep find the user inputs including files and network. NetDepGraph creates the DepGraph of 
 	     distributed system. And NetVulArray find paths between inputs and Arrays using NetDepGraph and InputDep. 
 
 Prerequisites:
 --------------
-LLVM 3.3 - (See http://llvm.org/docs/GettingStarted.html or use the script in the final of this README)
-Boost (http://www.boost.org/) 
+LLVM 3.3 - (See http://llvm.org/docs/GettingStarted.html or use the script in the final of this README).
+
+Boost (http://www.boost.org/).
 
 SIoT build:
 -----------
@@ -34,27 +35,18 @@ make -j4
 Run SIoT:
 ---------
 -Build the client and daemon bc files.
+
 -Copy the file "Run" to the folder where those bc files are or put it in the PATH.
 
--The "Run" file can be used in two ways:
-	1)./Run
-	-The user needs to specify the client and daemon names (without the .bc extension)
-	-The functions with send/recv/read/write on the name will saved in a two .txt files.
-	-All the functions and global variables from Deamon will receive a "ttt" tag on the beginning of their names.
-	-Client and daemon will be linked into one bc file.
-	-The user will be asked if he wants to analyse this link file.
-	-To do so, the user needs to analyse the printed functions to specify those used to communicate between client and daemon.
-	
-	2)./Run datafile
-	-The user needs to make a text file containing, in each line and separeted by comma, the client, daemon, send function and receive function names
-		-> See an example in examples/basic/teste.txt
+-The user needs to make a text file containing, in each line and separeted by comma, the client, daemon, send function and receive function names.
+
+-> See an example in examples/basic/teste.txt.
 
 
 
 Extras
 -------
 LLVM 3.3 Ubuntu Install Script 
-#!/bin/bash
 
 echo "install compile dependeces on ubuntu"
 sudo apt-get build-dep llvm-3.3-dev 
